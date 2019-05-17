@@ -3,7 +3,7 @@ var sidebar = document.querySelector('.sidebar');
 var menager = document.querySelector('.menager');
 var michael = document.querySelector('.men');
 var ajax = document.querySelectorAll('.ajax');
-
+var test = document.querySelector('.michael');
 var logo = document.querySelector('.logo');
 var photo = document.querySelector('.photo');
 var icon = document.querySelectorAll('.icon');
@@ -19,6 +19,7 @@ hamburger.addEventListener('click', function () {
 		icon[i].classList.toggle('visible');
 	};
 
+	test.classList.toggle('visible');
 	menager.classList.toggle('visible');
 	photo.classList.toggle('visible');
 	hamburger.classList.toggle('visible');

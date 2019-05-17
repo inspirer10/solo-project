@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.fix {
+  margin-right: -5px;
+}
+
 .logo {
   text-align: center;
   font-family: "Merienda", cursive;
@@ -20,18 +24,18 @@ body {
   text-align: right;
 }
 
-.logo > a {
-  padding-right: 10px;
+.logo > a.visible {
+  padding-right: 20px;
 }
 
 .toggle-menu {
-  padding-right: 10px;
   text-decoration: none;
   transition: 1s;
   color: white;
 }
 
 .toggle-menu.visible {
+  padding-right: 10px;
   transition: 1.5s;
 }
 
@@ -67,7 +71,7 @@ nav a {
   color: #9c9c9c;
   text-decoration: none;
   width: 100px;
-  padding: 15px;
+  padding: 16px;
   border-left: 1.5px solid #e3e3e3;
 }
 
@@ -164,7 +168,7 @@ nav {
   line-height: 35px;
   height: 100%;
   text-align: left;
-  width: 65px;
+  width: 60px;
   position: fixed;
   transition: 0.5s;
 }
@@ -485,31 +489,31 @@ a {
   height: 43px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.photo.visible {
   display: none;
 }
 
+.photo.visible {
+  display: block;
+}
+
 @media (max-width: 768px) {
-  .sidebar.visible {
+  .sidebar {
     transition: 0.2s;
     width: 100%;
     height: 100%;
     font-size: 80px;
     overflow: auto;
   }
-  .logo.visible {
+  .sidebar.visible {
+    width: 65px;
+  }
+  .logo {
     text-align: center;
     padding-top: 10px;
   }
-  .toggle-menu {
-    color: white;
+  .toggle-menu.visible {
     padding-top: 10px;
     padding-left: 5px;
-  }
-  .toggle-menu.visible {
-    float: right;
   }
   .info {
     font-size: 25px;
@@ -525,12 +529,16 @@ a {
     margin-left: 80px;
     margin-right: 20px;
   }
+  .links {
+    margin-left: 80px;
+    margin-right: 20px;
+  }
   .graph {
     text-align: center;
     font-size: 25px;
   }
   .calendar {
-    margin: 19px 3px 3px 3px;
+    margin: 19px 3px 3px;
   }
   .btnarrow {
     margin-bottom: 24px;
@@ -581,12 +589,20 @@ a {
   }
   .logo > a {
     font-size: 30px;
+    padding-right: 10px;
   }
-  .men.visible {
+  .men {
+    display: block;
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
     color: white;
+  }
+  .men.visible {
+    display: none;
+  }
+  .menager {
+    display: block;
   }
   .right {
     padding-right: 2px;
@@ -597,9 +613,29 @@ a {
   }
   .michael {
     padding-left: 41%;
+    display: none;
+  }
+  .michael.visible {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .photo {
+    display: block;
+  }
+  .photo.visible {
+    display: none;
+  }
+  .icon {
+    color: #999999;
   }
   .icon.visible {
     color: white;
+  }
+  .ajax {
+    display: inline;
+  }
+  .ajax.visible {
+    display: none;
   }
 }
 
