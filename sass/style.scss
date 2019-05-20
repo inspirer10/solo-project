@@ -10,6 +10,63 @@ body {
 }
 
 //
+
+.layer {
+  display: inline-block;
+  line-height: 42px;
+  font-size: 13px;
+  color: #999999;
+  display: none;
+}
+
+.fa-trash-alt {
+  margin-left: 30px;
+  margin-right: 28px;
+}
+
+.link {
+  transform: rotate(45deg)
+}
+
+.icona:hover {
+  color: #f58220;
+}
+
+.razer:hover .layer {
+  display: inline-block;
+}
+
+
+.razer:hover .rightside {
+  width: 50%;
+  margin: auto;
+  margin-right: unset;
+}
+
+
+.rightside {
+  color: #333333;
+  font-family: Roboto;
+  line-height: 42px;
+  margin-right: 187px;
+  justify-content: center;
+  width: 25vh;
+  text-align: justify;
+}
+
+.razer {
+  border-bottom: 1px solid #e3e3e3;
+  width: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.razer:hover {
+  background: whitesmoke;
+}
+
+
+//
 .fix {
   margin-right: -5px;
 }
@@ -277,6 +334,12 @@ nav {
 
 .icon {
   width: 40px;
+  color: white;
+  transition: .5s;
+  &.visible{
+    color: grey;
+    transition: .5s;
+  }
 }
 
 .men {
@@ -476,6 +539,7 @@ a {
   height: 43px;
   object-fit: cover;
   display: none;
+
   &.visible {
     display: block;
   }
@@ -588,6 +652,7 @@ a {
 
   .rightside {
     width: auto;
+    margin-right: 0;
   }
 
   .leftside {
@@ -655,6 +720,21 @@ a {
     &.visible {
       display: none;
     }
+  }
+
+  .razer:hover {
+    background: white;
+  }
+
+  .razer:hover .rightside {
+    width: auto;
+    margin: 0;
+  }
+
+  .layer {
+    display: inline-block;
+    margin-left: 10%;
+    font-size: 15px;
   }
 }
 
