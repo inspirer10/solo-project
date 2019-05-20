@@ -9,6 +9,30 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+//calendar 
+
+
+input {
+  width: 100px;
+  border-right: 1px solid #ccc;
+  display: inline-block;
+  padding: 1px 12px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.calendar:hover {
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+}
+
+.calendar:hover .data {
+  color: #333333;
+  cursor: pointer;
+}
+
+
+
 //
 
 .layer {
@@ -336,7 +360,8 @@ nav {
   width: 40px;
   color: white;
   transition: .5s;
-  &.visible{
+
+  &.visible {
     color: grey;
     transition: .5s;
   }
@@ -601,7 +626,7 @@ a {
   }
 
   .calendar {
-    margin: 19px 3px 3px;
+    margin: 19px 10px 5px;
   }
 
   .btnarrow {
@@ -681,12 +706,13 @@ a {
   }
 
   .right {
-    padding-right: 2px;
-    padding-left: 2px;
+    padding-right: 6px;
+    width: 25vw;
   }
 
   .left {
-    padding-right: 4px;
+    padding-right: 6px;
+    width: 25vw;
   }
 
   .michael {
@@ -749,5 +775,12 @@ a {
 @media (max-width: 600px) {
   .michael {
     padding-left: 33%;
+  }
+}
+
+//zmiana dodaj ip5
+@media (max-width: 321px) {
+  .calendar {
+    padding: 8px;
   }
 }

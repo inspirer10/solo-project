@@ -2,6 +2,12 @@
 
 body { background: lightgray; text-align: center; margin: 0; font-family: "Roboto", sans-serif; }
 
+input { width: 100px; border-right: 1px solid #ccc; display: inline-block; padding: 1px 12px; cursor: pointer; border: 0px; }
+
+.calendar:hover { border: 1px solid #b1b1b1; cursor: pointer; }
+
+.calendar:hover .data { color: #333333; cursor: pointer; }
+
 .layer { display: inline-block; line-height: 42px; font-size: 13px; color: #999999; display: none; }
 
 .fa-trash-alt { margin-left: 30px; margin-right: 28px; }
@@ -185,7 +191,7 @@ a { text-decoration: none; }
   .stats { margin-left: 80px; margin-right: 20px; }
   .links { margin-left: 80px; margin-right: 20px; }
   .graph { text-align: center; font-size: 25px; }
-  .calendar { margin: 19px 3px 3px; }
+  .calendar { margin: 19px 10px 5px; }
   .btnarrow { margin-bottom: 24px; }
   .data { padding-left: 5px; }
   main img { width: 100%; }
@@ -202,8 +208,8 @@ a { text-decoration: none; }
   .men { display: block; margin-top: 20px; text-align: center; font-size: 18px; color: white; }
   .men.visible { display: none; }
   .menager { display: block; }
-  .right { padding-right: 2px; padding-left: 2px; }
-  .left { padding-right: 4px; }
+  .right { padding-right: 6px; width: 25vw; }
+  .left { padding-right: 6px; width: 25vw; }
   .michael { padding-left: 41%; display: none; }
   .michael.visible { display: -ms-flexbox; display: flex; }
   .photo { display: block; }
@@ -219,3 +225,5 @@ a { text-decoration: none; }
 @media (max-width: 950px) { img { width: 65vw; } }
 
 @media (max-width: 600px) { .michael { padding-left: 33%; } }
+
+@media (max-width: 321px) { .calendar { padding: 8px; } }
