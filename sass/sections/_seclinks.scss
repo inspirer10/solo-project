@@ -1,0 +1,125 @@
+.links {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: 20px;
+    margin-left: 210px;
+}
+
+.links p {
+    line-height: 42px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.addflex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.button {
+    width: 127px;
+    height: 40px;
+    background-color: #f58220;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 20px 0 20px 0;
+
+    &:hover {
+        background-color: #ffa200;
+        cursor: pointer;
+    }
+}
+
+.text {
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+#link a {
+    text-decoration: none;
+    color: #56819f;
+
+    &:hover {
+        color: #ffa200;
+    }
+}
+
+.link {
+    transform: rotate(45deg);
+}
+
+.fa-trash-alt {
+    margin-left: 30px;
+    margin-right: 28px;
+}
+
+.links-icon:hover {
+    color: #f58220;
+}
+
+.leftside {
+    color: #a6a6a6;
+    font-weight: 700;
+    line-height: 42px;
+    padding-left: 20px;
+}
+
+.rightside {
+    text-align: left;
+    color: #333333;
+    width: 25vh;
+    line-height: 42px;
+    margin-right: 187px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.layer {
+    display: inline-block;
+    line-height: 42px;
+    font-size: 13px;
+    color: #999999;
+    display: none;
+}
+
+.reference {
+    border-bottom: 1px solid #e3e3e3;
+    width: 70vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    &:hover {
+        background: whitesmoke;
+    }
+}
+
+.reference:hover .layer {
+    display: inline-block;
+}
+
+.reference:hover .rightside {
+    width: 50%;
+    margin: auto;
+    margin-right: unset;
+}

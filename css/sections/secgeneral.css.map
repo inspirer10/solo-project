@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "secgeneral.css",
+	"sources": [
+		"../../sass/sections/secgeneral.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

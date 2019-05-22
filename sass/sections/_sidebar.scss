@@ -1,0 +1,151 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar {
+    background: #191919;
+    color: white;
+    line-height: 35px;
+    height: 100%;
+    text-align: left;
+    width: 60px;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.sidebar.visible {
+    transition: 0.2s;
+    width: 188px;
+
+    .toggle-menu {
+        padding-right: 10px;
+        transition: 1.5s
+    }
+
+    .ajax {
+        display: inline;
+        padding-right: 20px;
+    }
+
+    .logo {
+        text-align: right;
+    }
+
+    .icon {
+        transition: .5s;
+        color: white;
+    }
+
+    .men {
+        display: block;
+    }
+
+    .menager {
+        display: block;
+    }
+
+    .photo {
+        display: none;
+    }
+}
+
+.logo {
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.logo>a.visible {
+    padding-right: 10px;
+}
+
+.ajax {
+    display: none;
+}
+
+.toggle-menu {
+    text-decoration: none;
+    transition: 1s;
+    color: white;
+}
+
+.info {
+    padding-left: 17px;
+    font-weight: 300;
+    height: 40px;
+    font-size: 15px;
+    color: #999999;
+
+    &:hover {
+        background-color: #282828;
+        border-left: 4px solid #f58220;
+    }
+}
+
+#manager {
+    margin-top: 60px;
+}
+
+.men {
+    margin-top: 40px;
+    border-top: 1px solid #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -0.28px;
+    color: #808080;
+    padding: 5px 30px;
+    display: none;
+}
+
+.michael {
+    color: #56819f;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 18px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.michael a {
+    width: 100px;
+    padding: 18px;
+}
+
+.menager {
+    display: none;
+}
+
+.menager img {
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.photo {
+    margin-top: 15px;
+    margin-left: 7px;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+}
+
+.info-link {
+    color: #a6a6a6;
+}
+
+.icon {
+    color: grey;
+    width: 40px;
+    transition: .5s;
+}
