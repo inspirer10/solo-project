@@ -70,7 +70,7 @@ input {
     border-radius: 15%;
     border: none;
 
-    &::hover {
+    &:hover {
         background-color: #ffa200;
         cursor: pointer;
     }
@@ -79,7 +79,6 @@ input {
 .numbers {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 }
 

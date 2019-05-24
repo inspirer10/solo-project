@@ -29,10 +29,8 @@ a {
 }
 
 .center {
-  display: -ms-flexbox;
   display: flex;
   width: auto;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -138,10 +136,9 @@ a {
   }
 
   .reference {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
+    width: 100%;
 
     &:hover {
       background: white;
@@ -151,9 +148,7 @@ a {
   .numbers {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
     font-size: 18px;
   }
@@ -246,5 +241,14 @@ a {
 @media (max-width: 321px) {
   .calendar {
     padding: 8px;
+  }
+
+  input {
+    padding: 1px;
+  }
+
+  .right {
+    padding-right: 0px;
+    padding-left: 7px;
   }
 }

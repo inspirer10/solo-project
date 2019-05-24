@@ -106,9 +106,7 @@ ul {
     font-size: 14px;
     font-weight: 300;
     padding-left: 18px;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -125,7 +123,6 @@ ul {
     border-radius: 50%;
     width: 43px;
     height: 43px;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -135,17 +132,17 @@ ul {
     border-radius: 50%;
     width: 43px;
     height: 43px;
-    -o-object-fit: cover;
     object-fit: cover;
     display: block;
 }
 
 .info-link {
     color: #a6a6a6;
+    display: block;
 }
 
 .icon {
     color: grey;
-    width: 40px;
+    width: 37px;
     transition: .5s;
 }
