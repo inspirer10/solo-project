@@ -1,6 +1,5 @@
-//@import "sass/variables";
+@import "sass/variables";
 @import "sass/normalize";
-
 
 @import "sections/sidebar";
 @import "sections/topmenu";
@@ -32,6 +31,15 @@ a {
   display: flex;
   width: auto;
   flex-direction: column;
+}
+
+@media (max-width: 980px) {
+  img {
+    width: 65vw;
+  }
+  .facts {
+    width: 25vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -106,11 +114,12 @@ a {
   }
 
   .calendar {
-    margin: 19px 10px 5px;
+    margin: 19px 4px 5px;
   }
 
   .btnarrow {
     margin-bottom: 24px;
+    margin-right: 5px;
   }
 
   .data {
@@ -223,12 +232,6 @@ a {
     display: inline-block;
     margin-left: 10%;
     font-size: 15px;
-  }
-}
-
-@media (max-width: 950px) {
-  img {
-    width: 65vw;
   }
 }
 
