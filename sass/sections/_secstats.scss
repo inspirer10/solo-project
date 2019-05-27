@@ -40,21 +40,23 @@
 }
 
 input {
-    width: 100px;
+    width: 150px;
     border-right: 1px solid #ccc;
     display: inline-block;
-    padding: 1px 12px;
+    padding: 4px 0;
     cursor: pointer;
     border: 0px;
+    background: white;
 }
 
 .left {
+    padding-left: 6px;
     border-right: 1px solid $border-color;
     font-size: 14px;
 }
 
 .right {
-    padding-left: 10px;
+    padding-left: 6px;
     font-size: 14px;
 }
 
