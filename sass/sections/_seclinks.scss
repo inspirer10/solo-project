@@ -119,3 +119,41 @@
     margin: auto;
     margin-right: unset;
 }
+
+@media (max-width: 768px) {
+
+    .links {
+        margin-left: 80px;
+        margin-right: 20px;
+    }
+
+    .rightside {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .leftside {
+        padding-left: 0px;
+    }
+
+    .reference {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        &:hover {
+            background: white;
+        }
+    }
+
+    .reference:hover .rightside {
+        width: auto;
+        margin: 0;
+    }
+
+    .layer {
+        display: inline-block;
+        margin-left: 10%;
+        font-size: 15px;
+    }
+}
