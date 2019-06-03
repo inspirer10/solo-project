@@ -505,6 +505,7 @@ ul {
     padding-top: 10px;
     padding-right: 21px;
     padding-left: 5px;
+    transition: 0s;
   }
   .sidebar.visible .michael {
     display: none;
@@ -720,12 +721,13 @@ nav li {
 .rightside {
   text-align: left;
   color: #333333;
-  width: 25vh;
   line-height: 42px;
-  margin-right: 187px;
   -ms-flex-pack: center;
       justify-content: center;
   text-align: justify;
+  width: 50%;
+  margin: auto;
+  margin-right: unset;
 }
 
 .layer {
@@ -733,7 +735,7 @@ nav li {
   line-height: 42px;
   font-size: 13px;
   color: #999999;
-  display: none;
+  visibility: hidden;
 }
 
 .reference {
@@ -750,13 +752,7 @@ nav li {
 }
 
 .reference:hover .layer {
-  display: inline-block;
-}
-
-.reference:hover .rightside {
-  width: 50%;
-  margin: auto;
-  margin-right: unset;
+  visibility: visible;
 }
 
 @media (max-width: 768px) {
@@ -766,7 +762,7 @@ nav li {
   }
   .rightside {
     width: auto;
-    margin-right: 0;
+    margin: auto;
   }
   .leftside {
     padding-left: 0px;
@@ -789,6 +785,7 @@ nav li {
     display: inline-block;
     margin-left: 10%;
     font-size: 15px;
+    visibility: visible;
   }
 }
 
